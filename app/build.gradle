@@ -1,0 +1,21 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'ru.gitarapro.tuner'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'ru.gitarapro.tuner'
+        minSdk 23
+        targetSdk 36
+        versionCode 6
+        versionName '4.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
